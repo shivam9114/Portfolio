@@ -316,10 +316,38 @@
 
    </section> <!-- Call-To-Action Section End-->
 
+
+
+
+
+
+	
 <style>
   .card {
     width: 100%;
+    box-sizing: border-box;
     margin-bottom: 20px;
+  }
+
+  .edu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    width: calc(33.33% - 20px); /* This calculation accounts for margins and ensures three boxes per row */
+  }
+
+  @media (max-width: 767px) {
+    .box {
+      width: 100%;
+      margin: 0;
+    }
   }
 </style>
 
@@ -361,13 +389,6 @@
   </div>
 </section>
 
-<style>
-  @media (max-width: 600px) {
-    .box {
-      padding: 10px;
-    }
-  }
-</style>
 
 
 
